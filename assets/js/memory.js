@@ -9,7 +9,6 @@ $(document).ready(function(){
     	init: function(cards){
     		//clone de cards
     		this.cartes = cards.slice(0);
-    		console.log(cards);
     		this.counter = 0;
     		this.deck = [];
     		this.first_card = "";
