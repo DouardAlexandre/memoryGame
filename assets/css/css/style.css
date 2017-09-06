@@ -6,7 +6,7 @@ body {
   flex-wrap: wrap;
   width: 500px;
   height: 500px;
-  margin-top: 150px; }
+  margin-top: 30px; }
 
 .carte {
   margin: 0 auto;
@@ -17,6 +17,8 @@ body {
   font-size: .8em;
   -webkit-perspective: 600px;
   -moz-perspective: 600px; }
+  .carte.flip.block {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 255, 0, 0.6)); }
   .carte .front {
     position: absolute;
     top: 0;
@@ -60,3 +62,17 @@ body {
     z-index: 1000;
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg); }
+
+.modal {
+  margin-top: 35vh;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Annie Use Your Telescope', cursive; }
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  top: 2rem;
+  white-space: nowrap;
+  font-family: 'Annie Use Your Telescope', cursive; }

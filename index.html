@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+	<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/css/style.css">
@@ -12,8 +12,19 @@
 	<title>Memory</title>
 </head>
 <body>
+<P class="title">Memory Game</P>
 	<div class="container"></div>
 
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>Congratulation you win!</p>
+					<button type="button" class="btn btn-primary win">Start again</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -21,8 +32,10 @@
 	
 	<!-- jquery.js -->                       
 	<script src="assets/js/jquery-3.2.1.js"></script>
+	<!-- popper.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<!-- Bootstrap.js -->
-	<!--<script src="assets/js/bootstrap.js"></script>-->
+	<script src="assets/js/bootstrap.js"></script>
 	<script src="assets/js/memory.js"></script>
 </body>
 </html>
