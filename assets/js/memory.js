@@ -1,16 +1,13 @@
 $(document).ready(function(){
 
     /**
-    * Function qui 
+    * Memory Game
     */
 
-
-    
     let Memory = {
 
     	init: function(cards){
-    		$("#modal").modal();
-    		//copie de cards
+    		//clone de cards
     		this.cartes = cards.slice(0);
     		console.log(cards);
     		this.counter = 0;
@@ -75,6 +72,7 @@ $(document).ready(function(){
                 //si les cartes sont identiques
                 if(Memory.counter>2 && Memory.first_card === Memory.second_card){
                 	Memory.counter = 1;
+                	//reset cartes
                 	Memory.first_card ="";
                 	Memory.second_card ="";
                 	//ajout de la classe block à toutes les cartes tournées 
@@ -87,7 +85,7 @@ $(document).ready(function(){
                 	//premiere carte
                 	Memory.first_card = carte_click.find(".back img").attr("src");
                 	Memory.counter = 1;
-					//tourne toutes les cartes sans la classe block et avec la classe flip 
+					//tourne les cartes de classe flip sauf celles classe block 
 					$('.carte.flip:not(".block")').removeClass('flip');
 					//au troisieme click
 					carte_click.addClass('flip');
