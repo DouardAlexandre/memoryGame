@@ -5,4 +5,4 @@
 
 ## Auteur: Alexandre Douard
 
-## Page Github : https://kvort3x.github.io/memoryGame/
+## Page Github :  https://douardalexandre.github.io/memoryGame/
